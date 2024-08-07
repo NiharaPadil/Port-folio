@@ -19,33 +19,17 @@ export const ABOUT_TEXT3 =`In addition to my technical work, I'm involved in the
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "9th October 2023 - 4th November 2023",
+    role: "Intern",
+    company: "CoE Digital Forensics Intelligence Sahyadri",
+    description: "Worked on the project 'Detection of Fake Bills' which involved developing a machine learning model to accurately identify fake bills from a dataset of genuine and fake receipts. Responsibilities included data preprocessing, model building, training, evaluation, and threshold tuning.",
+   "technologies": [
+    "Machine Learning",
+    "Data Preprocessing",
+   
+  ]
   },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+  // Add more experiences here
 ];
 
 export const PROJECTS = [
@@ -54,7 +38,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "A mobile application for disaster management with crowd-sourced reporting and resource coordination. Integrated IoT using LoRa for SOS signals during network outages and AI to manage food shelf life. Features include real-time reporting, donation tracking, and role-based navigation for normal users, rescue teams, and NGOs.",
-    technologies: ["React Native", "Firebase Firestore", "Expo"],
+    technologies: ["React Native", "Firebase ", "Expo"],
   },
   {
     title: "Environmental Data Observation and Species Preservation Management System",

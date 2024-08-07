@@ -17,7 +17,6 @@ const Projects = () => {
   };
 
   const handleOverlayClick = (e) => {
-    // Close modal only if the click is on the overlay, not inside the modal content
     if (e.target === e.currentTarget) {
       handleCloseModal();
     }
@@ -37,7 +36,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pb-40 mb-8">
       <h1 className="my-20 text-center text-4xl">Projects</h1>
       <div className="flex flex-wrap justify-center gap-8">
         {displayedProjects.map((project, index) => (
@@ -50,8 +49,8 @@ const Projects = () => {
               <img 
                 src={project.image} 
                 alt={project.title} 
-                className="w-full h-32 object-cover rounded-md mb-4 border-2 border-gray-500 shadow-lg "
-                />
+                className="w-full h-32 object-cover rounded-md mb-4 border-2 border-gray-500 shadow-lg"
+              />
               <h2 className="text-xl font-bold mb-2 truncate">{project.title}</h2>
               <p className="text-sm text-neutral-400 truncate">{project.description}</p>
               <div className="flex flex-wrap mt-auto">
@@ -64,13 +63,12 @@ const Projects = () => {
         ))}
       </div>
       <div className="text-center mt-4">
-      <button 
-  onClick={() => setShowAll(!showAll)} 
-  className="px-6 py-3  text-white rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-gray-900  hover:focus:ring-1"
->
-  {showAll ? 'Show Less' : 'See More >'}
-</button>
-
+        <button 
+          onClick={() => setShowAll(!showAll)} 
+          className="px-6 py-3 text-white rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          {showAll ? 'Show Less' : 'See More >'}
+        </button>
       </div>
 
       {selectedProject && (
@@ -78,7 +76,7 @@ const Projects = () => {
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" 
           onClick={handleOverlayClick}
         >
-          <div className="bg-neutral-800 p-6 rounded-lg max-w-4xl w-full mx-4 relative">
+          <div className="bg-gray-900 p-6 rounded-lg max-w-4xl w-full mx-4 relative">
             <button 
               onClick={handleCloseModal} 
               className="absolute top-2 right-2 text-white text-2xl font-bold"
@@ -88,13 +86,13 @@ const Projects = () => {
             <img 
               src={selectedProject.image} 
               alt={selectedProject.title} 
-              className="w-full h-64 object-cover rounded-md mb-4" 
+              className="w-full h-64 object-cover rounded-md mb-4 border-2 border-gray-500 shadow-lg"
             />
             <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
             <p className="text-sm text-neutral-400 mb-4">{selectedProject.description}</p>
             <div className="flex flex-wrap mb-4">
               {selectedProject.technologies.map((tech, idx) => (
-                <span key={idx} className="mr-2 mb-2 px-2 py-1 text-xs bg-gray-200 rounded-full">{tech}</span>
+                <span key={idx} className="mr-2 mb-2 px-2 py-1 text-xs bg-gray-800 rounded-full">{tech}</span>
               ))}
             </div>
             {/* Add more details or additional information here if needed */}

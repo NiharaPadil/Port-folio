@@ -19,8 +19,9 @@ const About = () => {
                 width: '390px',
                 height: '500px',
                 objectFit: 'cover',
+                boxShadow: '0 10px 30px -5px rgba(255, 255, 255, 0.6)', 
               }}
-            />
+                  />
           </div>
         </div>
         <div className="w-full lg:w-1/2">
