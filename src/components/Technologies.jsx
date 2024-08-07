@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { FaPython, FaJs, FaJava, FaHtml5, FaCss3, FaReact, FaGit, FaGithub } from 'react-icons/fa';
 import { SiCplusplus, SiC, SiR, SiScikitlearn, SiMysql, SiFirebase, SiFigma, SiOracle, SiJupyter, SiTensorflow, SiPytorch } from 'react-icons/si';
 import { ScrollMenu } from 'react-horizontal-scrolling-menu';
