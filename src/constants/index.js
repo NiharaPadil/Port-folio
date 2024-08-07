@@ -1,7 +1,10 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project1.jpg";
+import project2 from "../assets/projects/project2.jpg";
+import project3 from "../assets/projects/project3.jpg";
+import project4 from "../assets/projects/project4.jpg";
+import project5 from "../assets/projects/project5.jpg";
+import project6 from "../assets/projects/project6.jpg";
+
 
 export const HERO_CONTENT = `
 I’m a passionate Data Science enthusiast and Software Engineer skilled in React Native, Python, and machine learning, committed to developing innovative applications and solving real-world problems.`;
@@ -47,34 +50,49 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "ResQ - AI and IoT Enhanced Mobile Application for Disaster and Resource Management",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A mobile application for disaster management with crowd-sourced reporting and resource coordination. Integrated IoT using LoRa for SOS signals during network outages and AI to manage food shelf life. Features include real-time reporting, donation tracking, and role-based navigation for normal users, rescue teams, and NGOs.",
+    technologies: ["React Native", "Firebase Firestore", "Expo"],
   },
   {
-    title: "Task Management App",
+    title: "Environmental Data Observation and Species Preservation Management System",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Developed a comprehensive wildlife conservation management system that streamlines data storage, retrieval, and organization. Implemented features for efficient data manipulation, security, process automation, and collaboration, enhancing overall system functionality and usability.",
+    technologies: ["Streamlit", "MySQL", "Python"],
   },
   {
-    title: "Portfolio Website",
+    title: "Aarambh - Smart First Aid Assistant",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Aarambh, built on the Kivy framework, utilizes AI and datasets for real-time disease and symptom detection. Empowering users with personalized first aid guidance, it ensures effective response to medical emergencies until professional help arrives.",
+    technologies: ["Kivy", "OpenCV", "Speech Recognition"],
   },
   {
-    title: "Blogging Platform",
+    title: "Keylogger Detection",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A program using Python with pynput, smtplib, threading, and dotenv for capturing keystrokes and sending logs via email. The project team includes Chirasmitha and Moulya, and they won first place for their keylogger project.",
+    technologies: ["Python", "pynput", "smtplib", "threading", "dotenv"],
+  },
+  {
+    title: "Bank Locker Authorization",
+    image: project5,
+    description:
+      "Developed a system for secure authorization of bank locker access, focusing on user authentication and authorization mechanisms to ensure secure and efficient access control.",
+    technologies: ["Python", "Database Management", "Security Protocols"],
+  },
+  {
+    title: "Fake Bills Detection",
+    image: project6,
+    description:
+      "A machine learning model to accurately detect fake bills from a dataset of genuine and fake receipts. The solution includes data preprocessing, logistic regression model building, and rigorous evaluation to enhance financial security and prevent fraud.",
+    technologies: ["Python", "Logistic Regression", "Machine Learning"],
   },
 ];
+
 
 export const CONTACT = {
   address: "767 Fifth Avenue, New York, NY 10153 ",
