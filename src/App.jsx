@@ -6,6 +6,7 @@ import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Moreabtme from './components/Moreabtme';
+import Contact from './components/Contact';
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Projects/>
         <Experience/>
         <Moreabtme/>
+        <Contact/>
       </div>
     </div>
   );

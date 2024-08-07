@@ -1,17 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Card = ({ title, description }) => {
     return (
-        <div style={{
-            border: '1px solid #ccc',
-            borderRadius: '8px',
-            padding: '20px',
-            margin: '10px',
-            width: '250px',
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-        }}>
-            <h2 style={{ marginBottom: '10px' }}>{title}</h2>
-            <p>{description}</p>
+        <div className="bg-gradient-to-r from-blue-900 p-6 rounded-lg shadow-xl shadow-gray-800 border border-black transition-transform transform hover:scale-150 cursor-pointer flex flex-col items-center">
+            <h2 className="text-xl font-bold mb-2 text-white text-center">{title}</h2>
+            <p className="text-sm text-gray-300 text-center">{description}</p>
         </div>
     );
 };
@@ -19,23 +12,30 @@ const Card = ({ title, description }) => {
 
 const Moreabtme = () => {
     return (
-        <div style={{ textAlign: 'center', padding: '20px' }}>
-            <h1>Know More About Me</h1>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-                <Card 
-                    title="Achievements" 
-                    
-                />
-                <Card 
-                    title="Volunteering Experience" 
-                    
-                />
-                <Card 
-                    title="Extra Curriculars" 
-                    
-                />
+        <div className="py-20 ">
+            <h1 className="text-center text-4xl font-semibold text-gray-100 mb-12">Know More About Me</h1>
+            <div className="flex flex-wrap justify-center gap-8">
+                <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                    <Card 
+                        title="Achievements" 
+                        
+                    />
+                </div>
+                <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                    <Card 
+                        title="Volunteering Experience" 
+                        
+                    />
+                </div>
+                <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                    <Card 
+                        title="Extra Curriculars" 
+                        
+                    />
+                </div>
             </div>
         </div>
     );
 };
-export default Moreabtme
+
+export default Moreabtme;

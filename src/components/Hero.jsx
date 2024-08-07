@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="w-full lg:w-1/2">
     <div className="flex flex-col items-center lg:items-start px-6 lg:px-20 py-4 lg:py-8">
       <h1 className=" pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl">Nihara Padil</h1>
-        <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Data Science Enthusiast and Developer</span>
+        <span className="bg-gradient-to-r from-blue-900 via-slate-600 to-pink-900 bg-clip-text text-3xl tracking-tight text-transparent">Data Science Enthusiast and Developer</span>
     
         <p className="my-2 max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}
         </p>   
