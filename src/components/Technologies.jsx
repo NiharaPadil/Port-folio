@@ -278,7 +278,10 @@ const Technologies = () => {
               <IconOverlay className="icon-name">PyTorch</IconOverlay>
             </IconBox>
           </div>
+          
+
         </ScrollMenu>
+        <h1 className="text-white text-white-700 absolute  right-9 m-4">More...</h1>
       </ScrollContainer>
     </div>
   );

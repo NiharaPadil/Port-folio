@@ -45,9 +45,18 @@ const Hero = () => {
     <div className="w-full lg:w-1/2 lg:p-8">
         <div className=" flex justify-center">
         <motion.img 
-        initial={{x:100,opacity:0}}
-        animate={{x:3,opacity:1.5}}
-        transition={{delay:0.5,duration:1.5}}
+        initial={{ x: 100, opacity: 0 }}
+  animate={{ x: 3, opacity: 1.5 }}
+  whileHover={{ scale: 1.05 }}
+  transition={{ 
+    type: "spring",    // Spring type for a bouncy effect
+    ease: "easeInOut", // Easing function for smooth transition
+    delay: 0.5,        // Delay before the animation starts
+    duration: 1.5      // Duration of the animation
+  }}
+
+
+  
   src={profilePic} 
   alt="Nihara Profile"
   style={{

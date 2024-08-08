@@ -20,6 +20,13 @@ const Navbar = () => {
         <a href="https://www.instagram.com/nihahahahaa__?utm_source=qr&igsh=cTYweDZqdHlkNTZp" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="transition-transform transform hover:scale-150" />
         </a>
+        <h1  > | </h1>
+
+        <a href="https://shorturl.at/TQH9Y" target="_blank" rel="noopener noreferrer">
+          <h1 className="transition-transform transform hover:scale-110 text-0.2xl" >Resume</h1>
+        </a>
+
+
       </div>
     </nav>
   );

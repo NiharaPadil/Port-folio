@@ -12,18 +12,20 @@ const About = () => {
       <div className="flex flex-wrap">
       <motion.div
       whileInView={{opacity: 1, x: 0}}
-      initial={{ opacity: 0, x: -100 }}    // Starting state: opacity 0 and x position -100
+      initial={{ opacity: 0, x: -100 }} 
+      whileHover={{ scale: 1.05 }}
+  transition={{ type: "spring", stiffness: 300 ,duration: 2,                     // Duration of the animation: 5 seconds for a slower effect
+        ease: "easeInOut" }} 
+
         
-      transition={{ 
-        duration: 2,                     // Duration of the animation: 5 seconds for a slower effect
-        ease: "easeInOut"                 // Easing function for a smooth transition
-      }}
+     
       className="w-full lg:w-1/2 lg:p-8"
     >
       <div className="flex items-center justify-center">
         <img
           src={about}
           alt="about"
+          
           style={{
             borderRadius: '10%',
             width: '390px',

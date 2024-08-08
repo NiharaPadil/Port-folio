@@ -6,14 +6,16 @@ const VolunteeringExperience = () => {
 
     return (
         <div className="p-10">
-            <h1 className="text-center text-3xl font-semibold text-gray-100 mb-6">Volunteering Experience</h1>
-            <p className="text-center text-gray-300 mb-6">Details about your volunteering experience.</p>
-            <button 
-                onClick={() => navigate('/')} 
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-            >
-                Back
-            </button>
+            <div className="flex justify-between items-center mb-6">
+                <h1 className="text-6xl font-bold text-gray-100 ">Volunteering Experience</h1>
+                <button 
+                    onClick={() => navigate('/')} 
+                    className="bg-gradient-to-r from-pink-500 to-white-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                >
+                    Back
+                </button>
+            </div>
+            <p className=" text-gray-300 mb-6">Details about your Volunteering Experience.</p>
         </div>
     );
 };
