@@ -36,6 +36,8 @@ const App = () => {
             <Route path="/achievements" element={<Achievements />} />
             <Route path="/volunteering-experience" element={<VolunteeringExperience />} />
             <Route path="/extra-curriculars" element={<ExtraCurriculars />} />
+      
+
           </Routes>
         </div>
       </div>

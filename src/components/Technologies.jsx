@@ -281,7 +281,7 @@ const Technologies = () => {
           
 
         </ScrollMenu>
-        <h1 className="text-white text-white-700 absolute  right-9 m-4">More...</h1>
+        <h1 className="text-white text-white-700 absolute  right-9 m-4">Scroll...</h1>
       </ScrollContainer>
     </div>
   );

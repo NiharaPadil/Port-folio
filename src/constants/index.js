@@ -79,3 +79,30 @@ export const CONTACT = {
   phoneNo: "+91 7204687050 ",
   email: "niharapadilhr@gmail.com",
 };
+
+
+export const ACHIEVEMENTS = [
+  {
+    year: "2023",
+    title: "Cognizant Hackathon Finalist",
+    description: "Ranked in the Top 12 at Cognizant’s Technoverse Hackathon, against 108 teams.",
+    details: ["Hackathon", "Teamwork", "Innovation"],
+    image: "src/assets/achievements/cog.png", // Replace with your actual image path
+  },
+  {
+    year: "2024",
+    title: "SAP Hackfest Hackathon Finalist",
+    description: "National-level event held at PSG iTech, Coimbatore, ranked among the top 100 teams across the country after successfully passing two selection rounds.",
+    details: ["Hackathon", "Problem Solving", "ResQ Project"],
+    image: "src/assets/achievements/sap.png", // Replace with your actual image path
+  },
+  {
+    year: "2023",
+    title: "Cyber Expo First Place",
+    description: "Secured first place in the departmental competition for the Keylogger project.",
+    details: ["Python", "Cybersecurity", "Pynput", "Threading"],
+    image: "src/assets/achievements/keylog.png", // Replace with your actual image path
+  },
+  
+];
+
