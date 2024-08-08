@@ -4,9 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ['react-horizontal-scrolling-menu'],
-    },
-  },
+ optimizeDeps: {
+    include: ['react-horizontal-scrolling-menu'],
+},
 });
