@@ -29,8 +29,8 @@ const Moreabtme = () => {
 
             <div className="flex flex-wrap justify-center gap-8">
                 <motion.div
-                    whileHover={{ scale: 1.3, rotate: -8 }}
-                    whileTap={{ scale: 0.6 }}
+                    whileHover={{ scale: 1.5, rotate: -8 }}
+                    whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 300 }}
                     className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
                 >
@@ -41,8 +41,8 @@ const Moreabtme = () => {
                     />
                 </motion.div>
                 <motion.div
-                    whileHover={{ scale: 1.3, rotate: 0 }}
-                    whileTap={{ scale: 0.6 }}
+                    whileHover={{ scale: 1.5, rotate: 0 }}
+                    whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 300 }}
                     className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
                 >
@@ -53,8 +53,8 @@ const Moreabtme = () => {
                     />
                 </motion.div>
                 <motion.div
-                    whileHover={{ scale: 1.3, rotate: 8 }}
-                    whileTap={{ scale: 0.6 }}
+                    whileHover={{ scale: 1.5, rotate: 8 }}
+                    whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 300 }}
                     className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
                 >

@@ -1,21 +1,31 @@
+// constants.js
+
 import project1 from "../assets/projects/project1.jpg";
 import project2 from "../assets/projects/project2.jpg";
 import project3 from "../assets/projects/project3.jpg";
 import project4 from "../assets/projects/project4.jpg";
 import project5 from "../assets/projects/project5.jpg";
 import project6 from "../assets/projects/project6.jpg";
+import ach1 from "../assets/achievements/cog.png";
+import ach2 from "../assets/achievements/sap.png";
+import ach3 from "../assets/achievements/keylog.png";
+import vol1 from "../assets/Volunteering/vol1.png"
+import vol2 from "../assets/Volunteering/vol2.png"
+import vol3 from "../assets/Volunteering/vol3.png"
+import vol4 from "../assets/Volunteering/vol4.png"
+import vol5 from "../assets/Volunteering/vol5.png"
+import vol6 from "../assets/Volunteering/vol6.png"
 
 
 export const HERO_CONTENT = `
 I’m a passionate Data Science enthusiast and Software Engineer skilled in React Native, Python, and machine learning, committed to developing innovative applications and solving real-world problems.`;
 
 export const ABOUT_TEXT1 = `
-I'm Nihara Padil, with a Bachelor's in Computer Science and Engineering specializing in Data Science. I have a solid foundation in programming languages and frameworks, focusing on transforming complex data into actionable insights and developing innovative solutions.`
+I'm Nihara Padil, with a Bachelor's in Computer Science and Engineering specializing in Data Science. I have a solid foundation in programming languages and frameworks, focusing on transforming complex data into actionable insights and developing innovative solutions.`;
 
-export const ABOUT_TEXT2 = `Currently, I'm enhancing my skills through practical projects and internships, working with datasets, implementing machine learning models, and developing meaningful applications. My experience includes developing the ResQ mobile application for disaster management and creating a wildlife conservation system using Streamlit and MySQL. I am focused on using technology to solve real-world problems and improve user experiences.`
+export const ABOUT_TEXT2 = `Currently, I'm enhancing my skills through practical projects and internships, working with datasets, implementing machine learning models, and developing meaningful applications. My experience includes developing the ResQ mobile application for disaster management and creating a wildlife conservation system using Streamlit and MySQL. I am focused on using technology to solve real-world problems and improve user experiences.`;
 
-export const ABOUT_TEXT3 =`In addition to my technical work, I'm involved in the tech community, organizing events, workshops, and hackathons, and mentoring aspiring developers. I'm always eager to learn and embrace new challenges that drive innovation.Outside of work, I enjoy traveling, singing, drawing, and dancing. Feel free to connect with me on LinkedIn or GitHub to learn more about my projects and achievements!
-`;
+export const ABOUT_TEXT3 = `In addition to my technical work, I'm involved in the tech community, organizing events, workshops, and hackathons, and mentoring aspiring developers. I'm always eager to learn and embrace new challenges that drive innovation. Outside of work, I enjoy traveling, singing, drawing, and dancing. Feel free to connect with me on LinkedIn or GitHub to learn more about my projects and achievements!`;
 
 export const EXPERIENCES = [
   {
@@ -27,14 +37,13 @@ export const EXPERIENCES = [
   },
 ];
 
-
 export const PROJECTS = [
   {
     title: "ResQ - AI and IoT Enhanced Mobile Application for Disaster and Resource Management",
     image: project1,
     description:
       "A mobile application for disaster management with crowd-sourced reporting and resource coordination. Integrated IoT using LoRa for SOS signals during network outages and AI to manage food shelf life. Features include real-time reporting, donation tracking, and role-based navigation for normal users, rescue teams, and NGOs.",
-    technologies: ["React Native", "Firebase ", "Expo"],
+    technologies: ["React Native", "Firebase", "Expo"],
   },
   {
     title: "Environmental Data Observation and Species Preservation Management System",
@@ -73,13 +82,11 @@ export const PROJECTS = [
   },
 ];
 
-
 export const CONTACT = {
   address: "AK Compound Padil Karmar M'lore",
-  phoneNo: "+91 7204687050 ",
+  phoneNo: "+91 7204687050",
   email: "niharapadilhr@gmail.com",
 };
-
 
 export const ACHIEVEMENTS = [
   {
@@ -87,22 +94,55 @@ export const ACHIEVEMENTS = [
     title: "Cognizant Hackathon Finalist",
     description: "Ranked in the Top 12 at Cognizant’s Technoverse Hackathon, against 108 teams.",
     details: ["Hackathon", "Teamwork", "Innovation"],
-    image: "src/assets/achievements/cog.png", // Replace with your actual image path
+    image: ach1 // Update this path
   },
   {
     year: "2024",
     title: "SAP Hackfest Hackathon Finalist",
     description: "National-level event held at PSG iTech, Coimbatore, ranked among the top 100 teams across the country after successfully passing two selection rounds.",
     details: ["Hackathon", "Problem Solving", "ResQ Project"],
-    image: "src/assets/achievements/sap.png", // Replace with your actual image path
+    image: ach2 // Update this path
   },
   {
     year: "2023",
     title: "Cyber Expo First Place",
     description: "Secured first place in the departmental competition for the Keylogger project.",
     details: ["Python", "Cybersecurity", "Pynput", "Threading"],
-    image: "src/assets/achievements/keylog.png", // Replace with your actual image path
+    image: ach3// Update this path
   },
-  
 ];
 
+export const VOLUNTEER = [
+  {
+    role: 'President, SOSWC (Sahyadri Open Source Women’s Community)',
+    description: 'Organized multiple workshops, hackathons, and events. Mentored students and taught Python. Organized DevHost ’24.',
+    image: vol1
+  },
+  {
+    role: 'MinDs Association, Technical Co-ordinator',
+    description: 'Organized cultural events.',
+    image: vol2
+  },
+  {
+    role: 'Volunteer Head and Event Organizer, Synergia ’23',
+    description: 'Managed volunteers and organized an event named TechMaze with over 100 participants.',
+    image:vol3
+  },
+  {
+    role: 'IEEE, Sahyadri Chapter, Member',
+    description: 'Attended an industry visit to A1 Logics.',
+    image:vol4
+  },
+  {
+    role: 'Student Volunteer,Outreach Program ',
+    description: 'Innovation and Entrepreneurship Outreach Program for Schools ',
+    image:vol5
+  },
+  {
+    role: 'Mentor, Junior Internship Program',
+    description: 'Mentored  over 150 learners in Python through interactive sessions and the Hack Harbor Summer Internship program, fostering mutual growth and learning.',
+    image:vol6
+  },
+
+
+];

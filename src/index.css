@@ -29,3 +29,13 @@ html, body {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff66b2; /* Color when hovering */
 }
+
+/* Add this CSS to your global styles or a dedicated CSS file */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
