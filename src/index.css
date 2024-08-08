@@ -6,3 +6,26 @@
 :root {
   font-family: "Inter", sans-serif;
 }
+
+html, body {
+  overflow-x: hidden; /* Hide horizontal scroll bar */
+  overflow-y: auto; /* Ensure vertical scroll bar is always visible */
+}
+
+/* Style for vertical scroll bar */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width of the scroll bar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: pink; /* Thumb color */
+  border-radius: 10px; /* Round the corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff66b2; /* Color when hovering */
+}
