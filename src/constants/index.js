@@ -19,18 +19,14 @@ export const ABOUT_TEXT3 =`In addition to my technical work, I'm involved in the
 
 export const EXPERIENCES = [
   {
-    year: "9th October 2023 - 4th November 2023",
+    year: "2023 - Present",
     role: "Intern",
-    company: "CoE Digital Forensics Intelligence Sahyadri",
-    description: "Worked on the project 'Detection of Fake Bills' which involved developing a machine learning model to accurately identify fake bills from a dataset of genuine and fake receipts. Responsibilities included data preprocessing, model building, training, evaluation, and threshold tuning.",
-   "technologies": [
-    "Machine Learning",
-    "Data Preprocessing",
-   
-  ]
+    company: "CoE Digital Forensics Intelligence, Sahyadri Mangalore",
+    description: "Analyzed datasets with over 100,000 entries during a data science internship. Created visualizations to highlight key trends and implemented machine learning models that improved prediction accuracy by 15%.",
+    technologies: ["Python", "Data Science", "Machine Learning", "Visualization"],
   },
-  // Add more experiences here
 ];
+
 
 export const PROJECTS = [
   {

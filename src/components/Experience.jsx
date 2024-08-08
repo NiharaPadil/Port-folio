@@ -1,78 +1,53 @@
 import React from 'react'
-import { EXPERIENCES} from '../constants'
-
-const styles = {
-  container: {
-    padding: '40px 20px',
-    backgroundColor: '#121212',
-    color: '#ffffff',
-  },
-  header: {
-    fontSize: '32px',
-    fontWeight: 'bold',
-    marginBottom: '30px',
-    textAlign: 'center',
-    color: '#FFFFFF',
-  },
-itemContainer: {
-  backgroundColor: '#1E1E1E',
-  padding: '20px',
-  borderRadius: '10px',
-  marginBottom: '20px',
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-},
-  year: {
-    fontSize: '15px',
-    fontWeight: 'bold',
-    color: 'purple',
-  },
-  role: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#FFFFFF',
-  },
-  company: {
-    fontSize: '18px',
-    fontWeight: 'bold',
-    color: '#888888',
-    marginTop: '5px',
-  },
-  description: {
-    fontSize: '16px',
-    marginTop: '10px',
-    lineHeight: '1.5',
-    color: '#CCCCCC',
-  },
-  technologies: {
-    fontSize: '16px',
-    marginTop: '10px',
-    fontStyle: 'italic',
-    color: 'purple',
-  },
-};
+import { EXPERIENCES } from '../constants'
+import {motion} from 'framer-motion'
+import COE from '../assets/Internship.png'
 
 
-const ExperienceItem = ({ item }) => (
-  <div style={styles.itemContainer}>
-    <h5 style={styles.company}>{item.company}</h5>
-    <h4 style={styles.role}>{item.role}</h4>
-    <h3 style={styles.year}>{item.year}</h3>
-    
-    <p style={styles.description}>{item.description}</p>
-    <p style={styles.technologies}>Technologies: {item.technologies.join(', ')}</p>
-  </div>
-);
+  
 
-const Experience = () => {
-  return (
-    <div style={styles.container}>
-      <h2 style={styles.header}>Experience</h2>
-      {EXPERIENCES.map((item, index) => (
-        <ExperienceItem key={index} item={item} />
-      ))}
+  
+  const Experience = () => {
+    return (
+      
+    <div className='border-b border-neutral-900 pb-4'>
+    <motion.h2 
+    whileInView={{opacity:1,y:0}}
+    initial={{opacity:0,y:-100}}
+    transition={{duration:0.5}}
+    className='my-20 text-center text-4xl'>Experience</motion.h2>
+    <div>
+        {EXPERIENCES.map((experience,index)=>(
+            <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
+            <motion.div 
+            whileInView={{opacity:1,x:0}}
+            initial={{opacity:0,x:-100}}
+            transition={{duration:1}}
+            className='w-full lg:w-1/4 '>
+            {/* <p className='mb-2 text-sm text-neutral-400'>{experience.year}</p>
+             */}
+             <img src={COE} alt="COE" className='w-64 h-64  transform -translate-y-14'/>
+            </motion.div>
+            <motion.div
+            whileInView={{opacity:1,x:0}}
+            initial={{opacity:0,x:100}}
+            transition={{duration:1}}
+
+             className='w-full max-w-xl lg:w-3/4'>
+            <h6 className='mb-2 font-semibold'>
+                {experience.role} - <span className='text-sm text-purple-100'>{experience.company}</span>
+            </h6>
+            <p className='mb-4 text-neutral-400'>{experience.description}</p>
+            {experience.technologies.map((technology,index)=>(
+                <span key={index} className='mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800'>{technology}</span>))}
+            </motion.div>
+            </div>
+        ))}
     </div>
-  );
-};
+  </div>
 
-export default Experience;
+        
+    );
+  };
+  
+  export default Experience;
