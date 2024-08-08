@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { PROJECTS } from '../constants';
 
 const Projects = () => {
@@ -37,13 +38,15 @@ const Projects = () => {
 
   return (
     <div className="border-b border-neutral-900 pb-40 mb-8">
-      <h1 className="my-20 text-center text-4xl">Projects</h1>
-      <div className="flex flex-wrap justify-center gap-8">
+<motion.h1  whileInView={{opacity:1,y:0}} initial={{opacity:0,y:-100}} transition={{duration:1.0,delay:0.1}} className="my-20 text-center text-4xl">Projects</motion.h1>      <div className="flex flex-wrap justify-center gap-8">
         {displayedProjects.map((project, index) => (
-          <div 
-            key={index} 
+          <motion.div
+            key={index}
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 cursor-pointer"
             onClick={() => handleCardClick(project)}
+            whileHover={{ scale: 1.1, rotate: 0 }} // Slightly scale up and rotate
+            whileTap={{ scale: 0.95 }} // Slightly scale down on tap
+            transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="bg-gray-900 p-4 rounded-lg shadow-lg h-72 flex flex-col transition-transform transform hover:scale-110">
               <img 
@@ -59,7 +62,7 @@ const Projects = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="text-center mt-4">
@@ -101,6 +104,6 @@ const Projects = () => {
       )}
     </div>
   );
-}
+};
 
 export default Projects;

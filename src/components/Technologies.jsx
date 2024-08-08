@@ -142,6 +142,9 @@ const iconVariants = {
   }
 };
 
+
+
+
 const IconBox = styled(motion.div)`
   display: flex;
   align-items: center;
