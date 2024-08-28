@@ -38,7 +38,15 @@ const Projects = () => {
 
   return (
     <div className="border-b border-neutral-900 pb-40 mb-8">
-<motion.h1  whileInView={{opacity:1,y:0}} initial={{opacity:0,y:-100}} transition={{duration:1.0,delay:0.1}} className="my-20 text-center text-4xl">Projects</motion.h1>      <div className="flex flex-wrap justify-center gap-8">
+      <motion.h1 
+        whileInView={{ opacity: 1, y: 0 }} 
+        initial={{ opacity: 0, y: -100 }} 
+        transition={{ duration: 1.0, delay: 0.1 }} 
+        className="my-20 text-center text-4xl"
+      >
+        Projects
+      </motion.h1>      
+      <div className="flex flex-wrap justify-center gap-8">
         {displayedProjects.map((project, index) => (
           <motion.div
             key={index}
@@ -76,10 +84,10 @@ const Projects = () => {
 
       {selectedProject && (
         <div 
-          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" 
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 p-4 sm:p-8" 
           onClick={handleOverlayClick}
         >
-          <div className="bg-gray-900 p-6 rounded-lg max-w-4xl w-full mx-4 relative">
+          <div className="bg-gray-900 p-6 rounded-lg max-w-xl sm:max-w-4xl w-full relative">
             <button 
               onClick={handleCloseModal} 
               className="absolute top-2 right-2 text-white text-2xl font-bold"
@@ -89,7 +97,7 @@ const Projects = () => {
             <img 
               src={selectedProject.image} 
               alt={selectedProject.title} 
-              className="w-full h-64 object-cover rounded-md mb-4 border-2 border-gray-500 shadow-lg"
+              className="w-full h-48 sm:h-64 object-cover rounded-md mb-4 border-2 border-gray-500 shadow-lg"
             />
             <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
             <p className="text-sm text-neutral-400 mb-4">{selectedProject.description}</p>

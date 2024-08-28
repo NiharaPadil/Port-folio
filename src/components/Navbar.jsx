@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/NP.png';
+
 import { FaLinkedin ,FaGithub, FaInstagram } from "react-icons/fa";
 
 
@@ -7,7 +7,11 @@ const Navbar = () => {
   return (
     <nav className=" mb-2 flex items-center justify-between px-6">
       <div className="flex flex-shrink-0 items-center">
-        <img className="mx-2 w-10" src={logo} alt="logo" />
+      {/* <a href="#home" className="transition-transform transform hover:scale-110">Home</a>
+        <a href="#about" className="transition-transform transform hover:scale-110">About</a>
+        <a href="#projects" className="transition-transform transform hover:scale-110">Projects</a>
+        <a href="#contact" className="transition-transform transform hover:scale-110">Contact</a> */}
+
       </div>
      
       <div className="flex items-center gap-4 text-2xl text-white py-10">
