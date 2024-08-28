@@ -63,7 +63,7 @@ export const PROJECTS = [
     title: "Keylogger Detection",
     image: project4,
     description:
-      "A program using Python with pynput, smtplib, threading, and dotenv for capturing keystrokes and sending logs via email. The project team includes Chirasmitha and Moulya, and they won first place for their keylogger project.",
+      "A program using Python with pynput, smtplib, threading, and dotenv for capturing keystrokes and sending logs via email.",
     technologies: ["Python", "pynput", "smtplib", "threading", "dotenv"],
   },
   {

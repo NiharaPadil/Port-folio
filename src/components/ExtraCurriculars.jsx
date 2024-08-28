@@ -52,10 +52,11 @@ const ExtraCurriculars = () => {
 
     // Sample art items
     const artItems = [
-        { title: 'Art 1', link: 'https://drive.google.com/file/d/16VQPZQ1-b1zq0Qe1I70f_A8JhmvaXDbi/view?usp=sharing' },
-        // { title: 'Art 2', link: 'https://drive.google.com/file/d/1QlYJcmZ2rqCYxJ5gU_X2yAQryn1A1XaO/view?usp=sharing' },
-        { title: 'Art 2', link: 'https://drive.google.com/file/d/1Gc3x6LCTJ1vpbWljPQnuL8rbjb6PX7FT/view?usp=sharing' },
-        // { title: 'Art 4', link: 'https://drive.google.com/file/d/1FoI4jUI1KQKI-8CbtTSb8Igc8Y3ohpq4/view?usp=sharing' },
+        { title: 'Yakshgana', link: 'https://drive.google.com/file/d/16VQPZQ1-b1zq0Qe1I70f_A8JhmvaXDbi/view?usp=sharing' },
+        { title: 'WallArt', link: 'https://drive.google.com/file/d/1FZDldehgYzxoNmo-vPhusi2ru9LhPFL4/view?usp=drive_link' },
+        { title: 'Scenary', link: 'https://drive.google.com/file/d/1Gc3x6LCTJ1vpbWljPQnuL8rbjb6PX7FT/view?usp=sharing' },
+        { title: 'WallArt2', link: 'https://drive.google.com/file/d/1FZEdTPMJnx2N3t92oKEEWd1-f6QP3dkk/view?usp=drive_link' },
+        { title: 'WallArt3', link: 'https://drive.google.com/file/d/1F_1xzspMCittZrjeePrpNC_kckRMrt6h/view?usp=drive_link' },
         // Add more items as needed
     ];
 
