@@ -26,7 +26,8 @@ const Navbar = () => {
         </a>
         <h1  > | </h1>
 
-        <a href="https://drive.google.com/file/d/1SR0v3IxwAgbKzYjnpr3af4skskh1LgXt/view?usp=drive_link"   target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/1Wr-Mi-_5Bf5KigLOOlLQFHQ-l3FeQLGy/view?usp=drive_link"   target="_blank" rel="noopener noreferrer">
+          
           <h1 className="transition-transform transform hover:scale-110 text-0.2xl" >Resume</h1>
         </a>
 
