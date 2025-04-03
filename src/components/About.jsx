@@ -74,7 +74,7 @@ const About = ({ id }) => {
               <img
                 src={about}
                 alt="about"
-                 className="rounded-[10%] w-[290px] h-[700px] object-cover relative -top-60 drop-shadow-lg"
+                 className="rounded-[10%] w-[290px] h-[500px] object-cover bottom-10 relative drop-shadow-lg"
 
               />
               {/* Additional glow layer */}
