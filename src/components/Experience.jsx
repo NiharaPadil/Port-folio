@@ -1,11 +1,6 @@
 import React from 'react'
 import { EXPERIENCES } from '../constants'
 import {motion} from 'framer-motion'
-import COE from '../assets/Internship.png'
-
-
-  
-
   
   const Experience = () => {
     return (
@@ -24,9 +19,8 @@ import COE from '../assets/Internship.png'
             initial={{opacity:0,x:-100}}
             transition={{duration:1}}
             className='w-full lg:w-1/4 '>
-            {/* <p className='mb-2 text-sm text-neutral-400'>{experience.year}</p>
-             */}
-             <img src={COE} alt="COE" className='w-64 h-64  transform -translate-y-14'/>
+            
+             <img src={experience.img} alt="COE" className='w-64 h-64  transform -translate-y-14'/>
             </motion.div>
             <motion.div
             whileInView={{opacity:1,x:0}}

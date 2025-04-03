@@ -10,15 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@coreui/react": "^5.5.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.1",
     "@react-three/fiber": "^8.2.2",
+    "aos": "^2.3.4",
     "framer-motion": "^11.3.23",
     "framer-motion-3d": "^11.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-horizontal-scrolling-menu": "^7.1.1",
-    "react-icons": "^5.2.1",
-    "react-router-dom": "^6.26.0",
-    "styled-components": "^6.1.12",
+    "react-icons": "^5.5.0",
+    "react-parallax-tilt": "^1.7.288",
+    "react-router-dom": "^6.30.0",
+    "sass": "^1.86.1",
+    "styled-components": "^6.1.16",
     "three": "^0.137.0"
   },
   "devDependencies": {
