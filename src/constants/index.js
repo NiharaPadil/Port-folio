@@ -1,5 +1,3 @@
-// constants.js
-
 import project1 from "../assets/projects/project1.jpg";
 import project2 from "../assets/projects/project2.jpg";
 import project3 from "../assets/projects/project3.jpg";
@@ -15,6 +13,8 @@ import vol3 from "../assets/Volunteering/vol3.png"
 import vol4 from "../assets/Volunteering/vol4.png"
 import vol5 from "../assets/Volunteering/vol5.png"
 import vol6 from "../assets/Volunteering/vol6.png"
+import exp1 from "../assets/Experience/Internship.png"
+import exp2 from "../assets/Experience/logowithleaf.png"
 
 
 export const HERO_CONTENT = `
@@ -23,27 +23,62 @@ I’m a passionate Data Science enthusiast and Software Engineer skilled in Reac
 export const ABOUT_TEXT1 = `
 I'm Nihara Padil, with a Bachelor's in Computer Science and Engineering specializing in Data Science. I have a solid foundation in programming languages and frameworks, focusing on transforming complex data into actionable insights and developing innovative solutions.`;
 
-export const ABOUT_TEXT2 = `Currently, I'm enhancing my skills through practical projects and internships, working with datasets, implementing machine learning models, and developing meaningful applications. My experience includes developing the ResQ mobile application for disaster management and creating a wildlife conservation system using Streamlit and MySQL. I am focused on using technology to solve real-world problems and improve user experiences.`;
+export const ABOUT_TEXT2 = `Currently, I'm enhancing my skills through practical projects and internships, working with datasets, implementing machine learning models, and developing meaningful applications. My experience includes developing the ResQ mobile application for disaster management and creating a wildlife conservation system using Streamlit and MySQL and building EcoAlert, an environmental monitoring app to detect illegal poaching and deforestation. I am focused on using technology to solve real-world problems and improve user experiences.`;
 
 export const ABOUT_TEXT3 = `In addition to my technical work, I'm involved in the tech community, organizing events, workshops, and hackathons, and mentoring aspiring developers. I'm always eager to learn and embrace new challenges that drive innovation. Outside of work, I enjoy traveling, singing, drawing, and dancing. Feel free to connect with me on LinkedIn or GitHub to learn more about my projects and achievements!`;
 
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
+    img:exp1,
     role: "Intern",
     company: "CoE Digital Forensics Intelligence, Sahyadri Mangalore",
     description: "Analyzed datasets with over 100,000 entries during a data science internship. Created visualizations to highlight key trends and implemented machine learning models that improved prediction accuracy by 15%.",
     technologies: ["Python", "Data Science", "Machine Learning", "Visualization"],
   },
+  {
+    year: "2025 - Present",
+    img:exp2,
+    role: "Intern",
+    company: "Ukshati Technologies Pvt Ltd, Manglore",
+    description: "Developing and maintaining cross-platform mobile applications using React Native. Collaborating with cross-functional teams to design and implement application features, ensuring smooth user experiences. Enhancing app performance and resolving bugsto optimize functionality. Adhering to agile methodologies and contributing to code reviews for maintaining code quality.",
+    technologies: ["React Native", "MySQL", "Node.js"],
+  },
+
+
+];
+
+export const EDUCATION = [
+  {
+    title: "Bachelor of Engineering in Computer Science and Engineering (Data Science)",
+    duration: "Dec 2021 - Present",
+    institution: "Sahyadri College of Engineering and Management, Karnataka, India",
+    performance: "CGPA: 9.35"
+  },
+  {
+    title: "12th Board - Science (PCMB)",
+    duration: "2019 - 2021",
+    institution: "Aloysius PU College, Karnataka, India",
+    performance: "Percentage: 97%"
+  },
+  {
+    title: "10th Board",
+    duration: "2018 - 2019",
+    institution: "St. Gerosa School, India",
+    performance: "Percentage: 94.88%"
+  }
 ];
 
 export const PROJECTS = [
   {
-    title: "ResQ - AI and IoT Enhanced Mobile Application for Disaster and Resource Management",
+    title: "ResQ - AI and IoT Enhanced Mobile Application for Disaster and Resource Mgnt",
     image: project1,
     description:
       "A mobile application for disaster management with crowd-sourced reporting and resource coordination. Integrated IoT using LoRa for SOS signals during network outages and AI to manage food shelf life. Features include real-time reporting, donation tracking, and role-based navigation for normal users, rescue teams, and NGOs.",
     technologies: ["React Native", "Firebase", "Expo"],
+    githubLink: "https://github.com/SankshipthShetty/ResQ",
+    youtubeLink:"https://youtu.be/FQp1ZShGhsE",
+    DeployLink:"https://youtu.be/FQp1ZShGhsE",
   },
   {
     title: "Environmental Data Observation and Species Preservation Management System",
@@ -51,6 +86,9 @@ export const PROJECTS = [
     description:
       "Developed a comprehensive wildlife conservation management system that streamlines data storage, retrieval, and organization. Implemented features for efficient data manipulation, security, process automation, and collaboration, enhancing overall system functionality and usability.",
     technologies: ["Streamlit", "MySQL", "Python"],
+    githubLink:"https://github.com/NiharaPadil/DBMS_MINI_PROJ.git",
+    youtubeLink:"https://www.youtube.com/watch?v=_umW077_9z8",
+    DeployLink:null,
   },
   {
     title: "Aarambh - Smart First Aid Assistant",
@@ -58,6 +96,9 @@ export const PROJECTS = [
     description:
       "Aarambh, built on the Kivy framework, utilizes AI and datasets for real-time disease and symptom detection. Empowering users with personalized first aid guidance, it ensures effective response to medical emergencies until professional help arrives.",
     technologies: ["Kivy", "OpenCV", "Speech Recognition"],
+    githubLink:"https://github.com/NiharaPadil/AARAMBH-Cognizant-hackathon",
+    youtubeLink:null,
+    DeployLink:null,
   },
   {
     title: "Keylogger Detection",
@@ -65,6 +106,9 @@ export const PROJECTS = [
     description:
       "A program using Python with pynput, smtplib, threading, and dotenv for capturing keystrokes and sending logs via email.",
     technologies: ["Python", "pynput", "smtplib", "threading", "dotenv"],
+    githubLink:"https://github.com/NiharaPadil/Cryptography-Network-Security-MiniProject",
+    youtubeLink:null,
+    DeployLink:null,
   },
   {
     title: "Bank Locker Authorization",
@@ -72,6 +116,9 @@ export const PROJECTS = [
     description:
       "Developed a system for secure authorization of bank locker access, focusing on user authentication and authorization mechanisms to ensure secure and efficient access control.",
     technologies: ["Python", "Database Management", "Security Protocols"],
+    githubLink:"https://github.com/NiharaPadil/Bank_locker_auth",
+    youtubeLink:null,
+    DeployLink:null,
   },
   {
     title: "Fake Bills Detection",
@@ -79,6 +126,9 @@ export const PROJECTS = [
     description:
       "A machine learning model to accurately detect fake bills from a dataset of genuine and fake receipts. The solution includes data preprocessing, logistic regression model building, and rigorous evaluation to enhance financial security and prevent fraud.",
     technologies: ["Python", "Logistic Regression", "Machine Learning"],
+    githubLink:"https://github.com/NiharaPadil/Fake_bills_Flask_React",
+    youtubeLink:"https://youtu.be/yQxuXCIfbu0",
+    DeployLink:null,
   },
 ];
 

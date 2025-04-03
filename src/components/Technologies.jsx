@@ -1,290 +1,64 @@
-import { FaPython, FaJs, FaJava, FaHtml5, FaCss3, FaReact, FaGit, FaGithub } from 'react-icons/fa';
-import { SiCplusplus, SiC, SiR, SiScikitlearn, SiMysql, SiFirebase, SiFigma, SiOracle, SiJupyter, SiTensorflow, SiPytorch } from 'react-icons/si';
-import { ScrollMenu } from 'react-horizontal-scrolling-menu';
-import 'react-horizontal-scrolling-menu/dist/styles.css';
-import styled from 'styled-components';
+
+
+
+'use client';
+import React from 'react';
+import TechStackIcon from './UIVerse/TechStackIcon';
 import { motion } from 'framer-motion';
 
-// Define individual variants for each icon
-const iconVariants = {
-  python: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  java: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 2.5, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  react: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 2, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  git: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.5, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  github: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 2.8, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  cplusplus: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.2, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  c: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 2.7, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  html5: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.1, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  css3: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.3, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  js: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 2.9, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  r: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.4, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  scikitlearn: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 2.6, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  mysql: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  firebase: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.2, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  figma: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.1, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  oracle: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.3, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  jupyter: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 2.9, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  tensorflow: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 3.4, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  },
-  pytorch: {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: { duration: 2.8, ease: "linear", repeat: Infinity, repeatType: "reverse" }
-    }
-  }
-};
-
-
-
-
-const IconBox = styled(motion.div)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px; /* Width of the box */
-  height: 100px; /* Height of the box */
-  border: 2px solid #ddd; /* Border around the box */
-  border-radius: 50px; /* Rounded corners for the box */
-  ${'' /* background-color: #f5f5f5;  */}
-  box-shadow: 0 5px 10px rgba(255, 105, 180, 0.6); /* Shadow effect */
-  
-  margin: 0 12px;
-
-  position: relative; /* Relative position for overlay positioning */
-
-  /* Hover effect */
-  &:hover .icon-name {
-    opacity: 1;
-    visibility: visible;
-`;
-
-
-
-const IconOverlay = styled.div`
-  position: absolute;
-  bottom: 150;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark background for text visibility */
-  color: white;
-  text-align: center;
-  padding: 4px;
-  border-radius: 50px; /* Rounded corners for the overlay */
-  opacity: 0.5;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-`;
-
-
-const ScrollContainer = styled.div`
-  overflow-x: scroll; /* Enable horizontal scrolling */
-  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-`;
+const techStacks = [
+  { icon: 'c-program-icon.svg', language: 'C' },
+  { icon: 'c-plus-plus-programming-language-icon.svg', language: 'C++' },
+{ icon: 'python-svgrepo-com.svg', language: 'Python' },
+{ icon: 'java-programming-language-icon.svg', language: 'Java' },
+{ icon: 'r-programming-language-icon.svg', language: 'R' },
+{ icon: 'html-icon.svg', language: 'HTML' },
+{ icon: 'css-icon.svg', language: 'CSS' },
+{icon: 'javascript-programming-language-icon.svg', language: 'JavaScript' },
+{ icon: 'react-js-icon.svg', language: 'React.js' },
+{ icon: 'react-native-app-icon.svg', language: 'React Native' },
+{ icon: 'firebase-svgrepo-com.svg', language: 'Firebase' },
+{ icon: 'flask.svg', language: 'Flask' },
+{ icon: 'node-js-icon.svg', language: 'Node.js' },
+{ icon: 'mysql-logo-svgrepo-com.svg', language: 'MySQL' },
+{ icon: 'git-icon-svgrepo-com.svg', language: 'Git' },
+{ icon: 'github-color-svgrepo-com.svg', language: 'GitHub' },
+{ icon: 'figma-svgrepo-com.svg', language: 'Figma' },
+{ icon: 'machine-learning_8618881.png', language: 'Machine Learning'}
+];
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
-      <motion.h1  whileInView={{opacity:1,y:0}} initial={{opacity:0,y:-100}} transition={{duration:1.5}} className="my-20 text-center text-4xl">Technologies</motion.h1>
-      <ScrollContainer>
-        <ScrollMenu>
-          <div className="flex py-4">
-            <IconBox variants={iconVariants.python} initial="initial" animate="animate">
-              <FaPython className="text-4xl text-yellow-400" />
-              <IconOverlay className="icon-name">Python</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.java} initial="initial" animate="animate">
-              <FaJava className="text-4xl text-orange-400" />
-              <IconOverlay className="icon-name">Java</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.react} initial="initial" animate="animate">
-              <FaReact className="text-4xl text-cyan-400" />
-              <IconOverlay className="icon-name">React</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.git} initial="initial" animate="animate">
-              <FaGit className="text-4xl text-orange-300" />
-              <IconOverlay className="icon-name">Git</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.github} initial="initial" animate="animate">
-              <FaGithub className="text-4xl text-black-400" />
-              <IconOverlay className="icon-name">GitHub</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.cplusplus} initial="initial" animate="animate">
-              <SiCplusplus className="text-4xl text-green-700" />
-              <IconOverlay className="icon-name">C++</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.c} initial="initial" animate="animate">
-              <SiC className="text-4xl text-blue-300" />
-              <IconOverlay className="icon-name">C</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.html5} initial="initial" animate="animate">
-              <FaHtml5 className="text-4xl text-orange-800" />
-              <IconOverlay className="icon-name">HTML5</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.css3} initial="initial" animate="animate">
-              <FaCss3 className="text-4xl text-blue-400" />
-              <IconOverlay className="icon-name">CSS3</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.js} initial="initial" animate="animate">
-              <FaJs className="text-4xl text-yellow-400" />
-              <IconOverlay className="icon-name">JavaScript</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.r} initial="initial" animate="animate">
-              <SiR className="text-4xl text-white-900" />
-              <IconOverlay className="icon-name">R</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.scikitlearn} initial="initial" animate="animate">
-              <SiScikitlearn className="text-4xl text-orange-400" />
-              <IconOverlay className="icon-name">Scikit-learn</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.mysql} initial="initial" animate="animate">
-              <SiMysql className="text-4xl text-blue-500" />
-              <IconOverlay className="icon-name">MySQL</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.firebase} initial="initial" animate="animate">
-              <SiFirebase className="text-4xl text-yellow-400" />
-              <IconOverlay className="icon-name">Firebase</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.figma} initial="initial" animate="animate">
-              <SiFigma className="text-4xl text-purple-400" />
-              <IconOverlay className="icon-name">Figma</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.oracle} initial="initial" animate="animate">
-              <SiOracle className="text-4xl text-red-600" />
-              <IconOverlay className="icon-name">Oracle</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.jupyter} initial="initial" animate="animate">
-              <SiJupyter className="text-4xl text-orange-500" />
-              <IconOverlay className="icon-name">Jupyter</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.tensorflow} initial="initial" animate="animate">
-              <SiTensorflow className="text-4xl text-yellow-600" />
-              <IconOverlay className="icon-name">TensorFlow</IconOverlay>
-            </IconBox>
-            <IconBox variants={iconVariants.pytorch} initial="initial" animate="animate">
-              <SiPytorch className="text-4xl text-orange-700" />
-              <IconOverlay className="icon-name">PyTorch</IconOverlay>
-            </IconBox>
-          </div>
-          
+    <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] overflow-hidden" id="Portfolio">
+      <motion.h1 
+        whileInView={{ opacity: 1, y: 0 }} 
+        initial={{ opacity: 0, y: -100 }} 
+        transition={{ duration: 1.0, delay: 0.1 }} 
+        className="my-20 text-center text-4xl text-white drop-shadow-[0_0_10px_#48dbfb]"
+      >
+        Projects
+      </motion.h1> 
 
-        </ScrollMenu>
-        <h1 className="text-white text-white-700 absolute  right-9 m-4">Scroll...</h1>
-      </ScrollContainer>
+      <div className="container mx-auto flex justify-center items-center pb-[10%]">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-2 md:gap-3">
+          {techStacks.map((stack, index) => (
+            <div
+              key={stack.language}
+              className="p-1" // Added padding to each grid item
+              data-aos={index % 3 === 0 ? 'fade-up-right' : index % 3 === 1 ? 'fade-up' : 'fade-up-left'}
+              data-aos-duration={index % 3 === 0 ? '1000' : index % 3 === 1 ? '1200' : '1000'}
+            >
+              <TechStackIcon 
+                TechStackIcon={stack.icon} 
+                Language={stack.language}
+                className="w-10 h-10 md:w-12 md:h-12" // Pass size props to your TechStackIcon
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Technologies;

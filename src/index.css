@@ -7,9 +7,14 @@
   font-family: "Inter", sans-serif;
 }
 
-html, body {
-  overflow-x: hidden; /* Hide horizontal scroll bar */
-  overflow-y: auto; /* Ensure vertical scroll bar is always visible */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll; /* Always show vertical scrollbar to prevent jumping */
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Style for vertical scroll bar */
@@ -38,4 +43,26 @@ html, body {
 .scrollbar-hidden {
   -ms-overflow-style: none; /* Internet Explorer and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #ADD8E6;
+  display: inline-block; /* Ensures it behaves properly */
+  animation: typing 3s steps(40, end) infinite alternate,
+             blink-caret 0.95s step-end infinite;
+}
+
+/* Typing and erasing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: calc(100% + 60px); }  /* Adjusts for full width */
+}
+
+/* Caret blinking effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  90% { border-color: #ADD8E6; }
 }
