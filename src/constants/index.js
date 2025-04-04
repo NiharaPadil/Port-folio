@@ -15,6 +15,10 @@ import vol5 from "../assets/Volunteering/vol5.png"
 import vol6 from "../assets/Volunteering/vol6.png"
 import exp1 from "../assets/Experience/Internship.png"
 import exp2 from "../assets/Experience/logowithleaf.png"
+import wall1 from "../assets/ExtraCurr/1.jpg"
+import wall2 from "../assets/ExtraCurr/2.jpg"
+import wall3 from "../assets/ExtraCurr/3.jpg"
+
 
 
 export const HERO_CONTENT = `
@@ -196,3 +200,29 @@ export const VOLUNTEER = [
 
 
 ];
+
+export const artItems = [
+  { title: 'WallArt 1', image: wall1 },
+  { title: 'WallArt 2', image: wall2 },
+  { title: 'WallArt 3', image: wall3 },
+];
+
+
+export const cardItems = [
+        { title: 'Namma Yelubina Handara', link: 'https://youtu.be/W0uuPBxRxn4?si=POg834dIrcn8NliB' },
+        { title: 'Narayana Narayan', link: 'https://youtu.be/xMFD1zDhVrg' },
+        { title: 'Munjane Manjalli', link: 'https://youtu.be/QAKoywp3x_8' },
+        { title: 'Mere Yara', link: 'https://youtu.be/wOCJddm9aDo' },
+        { title: 'Naguva Nayana', link: 'https://youtu.be/upwcwtkjupk' },
+        { title: 'Branch Entry 2K22', link: 'https://youtu.be/-dSa-ZKc3ho' },
+        { title: 'Branch Entry 2K23', link: 'https://youtu.be/IjgGdwaueV0' },
+        { title: 'Geejaga Hakki', link: 'https://youtu.be/8dC6J_WcDNg' },
+        { title: 'Tune Kya Kiya', link: 'https://youtube.com/shorts/lJXzd6lhN1M?feature=share' },
+        { title: 'Pasoori', link: 'https://youtube.com/shorts/PDrZt5LkiTE?feature=share' },
+        { title: 'Kadalanu Kana', link: 'https://youtube.com/shorts/Ilfahk-OF4k?feature=share' },
+        { title: 'Pehli Nazar', link: 'https://youtube.com/shorts/AwyvppvAcss?feature=share' },
+        { title: 'Na Naguva Modalene', link: 'https://youtube.com/shorts/1oB8moyv55U?feature=share' },
+        { title: 'Maand', link: 'https://youtube.com/shorts/rn3nJXJD3Ro?feature=share' },
+        { title: 'Titli', link: 'https://youtube.com/shorts/UxEloBn8B7g?feature=share' },
+        { title: 'Nange allava ', link: 'https://youtube.com/shorts/DVaVR8O00Sg?feature=share' },
+    ];
