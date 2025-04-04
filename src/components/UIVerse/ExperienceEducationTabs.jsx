@@ -44,21 +44,22 @@ const StyledWrapper = styled.div`
     justify-content: center;
     width: fit-content;
     margin-bottom: 2rem;
+    
   }
 
   .tabs {
     display: flex;
     position: relative;
     background-color: rgba(72, 135, 236, 0.1);
-    padding: 0.4rem;
+    padding: 0.5rem;
     border-radius: 9999px;
-    border: 1px solid rgba(236, 72, 153, 0.3);
+    border: 1px solid rgba(227, 224, 237, 0.9);
     transition: all 0.3s ease;
-    width: fit-content;
+    width: fit-content+10px;
     
     &:hover {
-      box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
-      border-color: rgba(236, 72, 153, 0.7);
+      box-shadow: 0 0 35px rgba(238, 219, 229, 0.5);
+      border-color: rgba(250, 205, 227, 0.7);
     }
   }
 
@@ -77,7 +78,7 @@ const StyledWrapper = styled.div`
     outline: none;
     
     &:hover {
-      color: #ec4899;
+      color:rgb(91, 188, 248);
     }
 
     &.active {
@@ -90,7 +91,7 @@ const StyledWrapper = styled.div`
     position: absolute;
     height: 32px;
     width: 100px;
-    background-color: rgba(236, 72, 153, 0.5);
+    background-color: rgba(101, 174, 255 ,0.2);
     border-radius: 9999px;
     transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     box-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
