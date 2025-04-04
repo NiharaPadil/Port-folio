@@ -82,7 +82,7 @@ export const PROJECTS = [
     technologies: ["React Native", "Firebase", "Expo"],
     githubLink: "https://github.com/SankshipthShetty/ResQ",
     youtubeLink:"https://youtu.be/FQp1ZShGhsE",
-    DeployLink:"https://youtu.be/FQp1ZShGhsE",
+    DeployLink:null,
   },
   {
     title: "Environmental Data Observation and Species Preservation Management System",
