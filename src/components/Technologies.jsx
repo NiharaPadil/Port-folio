@@ -36,7 +36,7 @@ const Technologies = () => {
         transition={{ duration: 1.0, delay: 0.1 }} 
         className="my-20 text-center text-4xl text-white drop-shadow-[0_0_10px_#48dbfb]"
       >
-        Projects
+        Tech Stack
       </motion.h1> 
 
       <div className="container mx-auto flex justify-center items-center pb-[10%]">
