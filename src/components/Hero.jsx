@@ -1,9 +1,8 @@
 import React from 'react';
 import { HERO_CONTENT } from '../constants';
-import profilePic from "../assets/HeroImg1.png";
+import profilePic from "../assets/download.jpeg";
 import backgroundPic from "../assets/BackImg1.png"; // Add your background image
 import { motion } from "framer-motion";
-
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -65,7 +64,7 @@ const Hero = ({ id }) => {
 
 
           {/* First Irregular Circle */}
-          <motion.div
+          {/* <motion.div
             className="absolute"
             animate={{
               rotate: 360,
@@ -99,10 +98,10 @@ const Hero = ({ id }) => {
               filter: 'blur(1px)',
               opacity: 0.3
             }}
-          />
+          /> */}
 
           {/* Second Irregular Circle - Now positioned relative to container */}
-          <motion.div
+          {/* <motion.div
             className="absolute"
             animate={{
               rotate: -360,
@@ -137,7 +136,7 @@ const Hero = ({ id }) => {
               filter: 'blur(0.5px)',
               opacity: 0.2
             }}
-          />
+          /> */}
 
          {/* Foreground Image with Glow Effect */}
 <div className="flex justify-center relative z-10">
@@ -152,14 +151,15 @@ const Hero = ({ id }) => {
       duration: 1.5
     }}
     src={profilePic} 
+    
     alt="Nihara Profile"
     className="rounded-lg relative"
     style={{
-      width: '490px',
-      height: '700px',
-      right: '0px',
+      width: '540px',
+      height: '540px',
+      right: '10px',
       borderRadius: '20%',
-      bottom: '190px',
+      bottom: '50px',
       objectFit: 'cover',
       filter: 'drop-shadow(0 0 10px rgba(0, 255, 255, 0.7))',
       //position: 'relative'
