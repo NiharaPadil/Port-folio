@@ -1,6 +1,6 @@
 import React from 'react';
 import { HERO_CONTENT } from '../constants';
-import profilePic from "../assets/download.jpeg";
+import profilePic from "../assets/YO.png";
 import backgroundPic from "../assets/BackImg1.png"; // Add your background image
 import { motion } from "framer-motion";
 const container = (delay) => ({
@@ -156,7 +156,7 @@ const Hero = ({ id }) => {
     className="rounded-lg relative"
     style={{
       width: '540px',
-      height: '540px',
+      height: '550px',
       right: '10px',
       borderRadius: '20%',
       bottom: '50px',
