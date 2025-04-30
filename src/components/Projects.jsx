@@ -303,7 +303,7 @@ const Projects = ({ id }) => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="bg-gray-900 p-6 rounded-lg max-w-xl sm:max-w-4xl w-full relative"
+            className="bg-gray-900 p-6 rounded-lg max-w-xl sm:max-w-8xl w-full relative"
           >
             <button 
               onClick={handleCloseModal} 
