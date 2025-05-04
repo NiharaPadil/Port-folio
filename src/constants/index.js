@@ -4,6 +4,7 @@ import project3 from "../assets/projects/project3.jpg";
 import project4 from "../assets/projects/project4.jpg";
 import project5 from "../assets/projects/project5.jpg";
 import project6 from "../assets/projects/project6.jpg";
+import project7 from "../assets/projects/project7.png";
 import ach1 from "../assets/achievements/cog.png";
 import ach2 from "../assets/achievements/sap.png";
 import ach3 from "../assets/achievements/keylog.png";
@@ -18,6 +19,7 @@ import exp2 from "../assets/Experience/logowithleaf.png"
 import wall1 from "../assets/ExtraCurr/1.jpg"
 import wall2 from "../assets/ExtraCurr/2.jpg"
 import wall3 from "../assets/ExtraCurr/3.jpg"
+
 
 
 
@@ -95,15 +97,15 @@ export const PROJECTS = [
     DeployLink:null,
   },
   {
-    title: "Aarambh - Smart First Aid Assistant",
-    image: project3,
+    title: "EcoAlert - Environmental Monitoring App",
+    image: project7,
     description:
-      "Aarambh, built on the Kivy framework, utilizes AI and datasets for real-time disease and symptom detection. Empowering users with personalized first aid guidance, it ensures effective response to medical emergencies until professional help arrives.",
-    technologies: ["Kivy", "OpenCV", "Speech Recognition"],
-    githubLink:"https://github.com/NiharaPadil/AARAMBH-Cognizant-hackathon",
-    youtubeLink:null,
-    DeployLink:null,
+      "An environmental monitoring app that detects illegal poaching and deforestation using machine learning and IoT. It provides real-time alerts and data visualization for effective conservation efforts.",
+    technologies: ["React Native", "Machine Learning", "IoT"],
+    githubLink:"https://github.com/NiharaPadil/EcoAlert-expo.git",
+    youtubeLink:"https://youtu.be/VOcxAyi1xxA",
   },
+  
   {
     title: "Keylogger Detection",
     image: project4,
@@ -134,6 +136,17 @@ export const PROJECTS = [
     youtubeLink:"https://youtu.be/yQxuXCIfbu0",
     DeployLink:null,
   },
+  {
+    title: "Aarambh - Smart First Aid Assistant",
+    image: project3,
+    description:
+      "Aarambh, built on the Kivy framework, utilizes AI and datasets for real-time disease and symptom detection. Empowering users with personalized first aid guidance, it ensures effective response to medical emergencies until professional help arrives.",
+    technologies: ["Kivy", "OpenCV", "Speech Recognition"],
+    githubLink:"https://github.com/NiharaPadil/AARAMBH-Cognizant-hackathon",
+    youtubeLink:null,
+    DeployLink:null,
+  },
+  
 ];
 
 export const CONTACT = {
