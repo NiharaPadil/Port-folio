@@ -35,14 +35,6 @@ export const ABOUT_TEXT3 = `In addition to my technical work, I'm involved in th
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    img:exp1,
-    role: "Intern",
-    company: "CoE Digital Forensics Intelligence, Sahyadri Mangalore",
-    description: "Analyzed datasets with over 100,000 entries during a data science internship. Created visualizations to highlight key trends and implemented machine learning models that improved prediction accuracy by 15%.",
-    technologies: ["Python", "Data Science", "Machine Learning", "Visualization"],
-  },
-  {
     year: "2025 - Present",
     img:exp2,
     role: "Intern",
@@ -50,6 +42,15 @@ export const EXPERIENCES = [
     description: "Developing and maintaining cross-platform mobile applications using React Native. Collaborating with cross-functional teams to design and implement application features, ensuring smooth user experiences. Enhancing app performance and resolving bugsto optimize functionality. Adhering to agile methodologies and contributing to code reviews for maintaining code quality.",
     technologies: ["React Native", "MySQL", "Node.js"],
   },
+  {
+    year: "2023 ",
+    img:exp1,
+    role: "Intern",
+    company: "CoE Digital Forensics Intelligence, Sahyadri Mangalore",
+    description: "Analyzed datasets with over 100,000 entries during a data science internship. Created visualizations to highlight key trends and implemented machine learning models that improved prediction accuracy by 15%.",
+    technologies: ["Python", "Data Science", "Machine Learning", "Visualization"],
+  },
+  
 
 
 ];
